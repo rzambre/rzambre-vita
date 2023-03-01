@@ -44,7 +44,14 @@
 \usepackage{org-preamble-xelatex} 
 \usepackage{fontawesome,url}
 
+\usepackage{etaremune}
+\usepackage{enumitem}
 
+\renewcommand*{\thesection}{\Roman{section}}
+\renewcommand*{\thesubsection}{\Roman{subsection}}
+\renewcommand*{\labelenumi}{[\labelprefix\theenumi]}
+
+\definecolor{nice-purple}{HTML}{483d8b}
 %%%------------------------------------------------------------------------
 %%% Metadata
 %%%------------------------------------------------------------------------
@@ -58,18 +65,19 @@
 \def\mybibliostyle{plain}
 \def\mybibliocommand{}
 \def\mysubtitle{}
-\def\myaffiliation{University of California, Irvine}
-\def\myaddress{Department of Electrical Engineering and Computer Science}
-\def\myemail{rzambre@uci.edu}
-\def\myweb{http://www.rohitzambre.com}
-\def\myphone{(515) 708-8387}
+\def\myaffiliation{Nvidia Networking}
+\def\myaddress{Seattle, WA}
+\def\myemail{rzambre@nvidia.com}
+\def\myweb{rohitzambre.com}
+\def\mygithub{github.com/rzambre}
+%\def\myphone{(515) 708-8387}
 \def\myfax{(919) 660-5623}
 \def\mytwitter{@rohitzambre}
 \def\myversion{}
 \def\myrevision{}
 
 
-\def\myaffiliation{University of California, Irvine}
+%\def\myaffiliation{AMD Research}
 \def\myauthor{Rohit Zambre}
 \date{} % not used (revision control instead)
 \def\mykeywords{Rohit, Zambre, Rohit Zambre, Vita, CV, Resume, HPC}
@@ -147,7 +155,7 @@
 %%%------------------------------------------------------------------------
 \begin{minipage}[t]{2.95in}
  \flushright {\footnotesize 
- \href{http://sociology.duke.edu}{Department of Sociology}, \\ Box 90088, \\ Duke University, \\ \vspace{-0.05in} Durham, \textsc{nc} 27708.}  
+ \href{https://www.nvidia.com/en-us/networking/}{Nvidia Networking},\\ \vspace{-0.05in} Seattle, \textsc{WA}, USA}  
   
 \end{minipage}
 \hfill     
@@ -156,325 +164,354 @@
 %\end{minipage}
 \hfill
 \begin{minipage}[t]{1.3in}
-  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
-  {\scriptsize  \texttt{\href{http://twitter.com/kjhealy}{\mytwitter}} \, \faTwitter }  \\ 
+  %\flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
+  %\flushright \footnotesize  \addressblock \\ 
+  \flushright \footnotesize 
+  {\scriptsize  \texttt{\href{http://twitter.com/rohitzambre}{\mytwitter}} \, \faTwitter }  \\ 
   {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
-  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+  {\scriptsize  \texttt{\href{https://github.com/rzambre}{\mygithub}} \, \faGithub} \\
+  {\scriptsize  \texttt{\href{https://www.rohitzambre.com}{\myweb}} \, \faGlobe}
 \end{minipage}
 
 \medskip
 
 %% Name 
-\noindent{\LARGE\scheader \textsc{kieran healy}}
+\noindent{\LARGE\scheader \textsc{Rohit Zambre}}
 \reversemarginpar
 
 \bigskip       
 
-
-%% Appointments
-% \medskip
-\marginhead{\sffamily appointments}
-
-\ind Associate Professor in Sociology and the Kenan Institute for Ethics, Duke University, 2009--Present.      
-
-\ind Visiting Associate Professor of Sociology, Duke University, 2008--2009.
-
-\ind Associate Professor of Sociology, University of Arizona, 2008.
-
-\ind Research Fellow, Social and Political Theory Program,
-Research School of Social Sciences, Australian National University, 2003--2006.
-
-\ind Assistant Professor of Sociology, University of Arizona, 2001--2008.
-
-\bigskip
-
 %% Education
+\section{Education}
 
-\marginhead{\sffamily {{\vskip -0.23em} education}}
+%\marginhead{\sffamily {{\vskip -0.23em} Education}}
 
 %\noindent\emph{Princeton University \vspace{0.01in}}
 
-\ind Ph.D, Sociology, Princeton University, 2001.
+\ind Ph.D., Computer Engineering, University of California, Irvine, 2020.
 
-\ind \hspace{0.35in} \footnotesize Dissertation: \emph{Exchange in Blood and Organs}.\newline Winner, American Sociological Association's Dissertation Award.\normalsize \vspace{0.05in}
+\ind \hspace{0.35in} \footnotesize Dissertation: \href{https://escholarship.org/uc/item/2g34n1hs}{Exascalable Communication for Modern Supercomputing}.
+\newline Advisor: \href{https://hpcforge.eng.uci.edu/}{Aparna Chandramowlishwaran}.
+\newline \href{https://www.sighpc.org/for-your-career/dissertation-award/2021-award-winner-rohit-zambre}{ACM SIGHPC Outstanding Doctoral Dissertation Award}.
+\normalsize \vspace{0.05in}
 
-\ind M.A., Sociology, Princeton University, 1998. 
+\ind M.S., Computer Engineering, University of California, Irvine, 2017. 
 
-%\medskip
-%\noindent\emph{National University of Ireland (Cork)\vspace{0.02in}}
+\ind \hspace{0.35in} \footnotesize Thesis: \href{https://escholarship.org/content/qt1044v4n3/qt1044v4n3.pdf}{Adaptive Parallelism in Browsers}.
+\normalsize \vspace{0.05in}
 
-\ind M.A., Sociology, First Class, National University of Ireland (Cork), 1994.
+\ind B.S., Electrical Engineering, Iowa State University, 2015.
 
-\ind \hspace{0.35in} \footnotesize Thesis: \emph{The Language of Influence: Public Debate and the Politics of the X-case.} \normalsize \vspace{0.01in}
-
-\ind B.A. (Joint Hons.), First Class, National University of Ireland (Cork), 1993.
-
-\bigskip
- 
-%% Publications
-\marginhead{\sffamily {\vskip 0.35em} publications}
-\medskip
-\noindent\emph{Book \vspace{0.01in}}
-
-\ind  Kieran Healy. 2006. \emph{\href{http://www.lastbestgifts.com}{Last Best Gifts: Altruism and the Market for Human Blood and Organs}}. Chicago:~University of Chicago Press. \vspace{0.05in}
-
-\ind \hspace{0.35in} \footnotesize Winner, Association for Research on Nonprofit Organizations and Voluntary Action (ARNOVA) Outstanding Book Prize. Finalist, C. Wright Mills Award. 
-
-\vspace{-0.075in}
-
+\ind \hspace{0.35in} \footnotesize Concentration: Computer Engineering.
+\newline Magna Cum Laude.
 \normalsize
 
 \bigskip
-\noindent\emph{Journal articles \vspace{0.05in}}
+
+\section{Appointments}
+
+%% Research experience
+% \medskip
+\marginhead{\sffamily Research}
+
+\ind Senior Software Architect, Nvidia Networking, 2022--present.
+\vspace{0.01in}
+
+\ind HPC Architecture Researcher, AMD Research, 2021--2022.
+\vspace{0.01in}
+
+\ind Graduate Student Researcher, University of California, Irvine, 2015--2020.
+\vspace{0.01in}
+
+\ind Visiting Student, Argonne National Laboratory, 2017--2020.
+\vspace{0.01in}
+
+\ind Research Intern, Arm Research, Summer 2018.
+\vspace{0.01in}
+
+\ind Research Aide, Argonne National Laboratory, Spring and Summer 2017.
+\vspace{0.01in}
+	
+\ind Research Assistant, Mozilla Research, Summer 2016.
+
+\bigskip
+
+%% Engineering experience
+% \medskip
+\marginhead{\sffamily Engineering}
+
+\ind Intern SSD Modeling Engineer, Micron Technology, Summer 2014.
+\vspace{0.01in}
+
+\ind NAND Product Engineering Intern, Micron Technology, Summer 2013.
+\vspace{0.01in}
+
+\bigskip
+
+%% Teaching experience
+% \medskip
+\marginhead{\sffamily Teaching}
+
+\ind Graduate Teaching Assistant, University of California, Irvine, Fall 2016.
+
+\ind \hspace{0.35in} \footnotesize EECS 215: Design and Analysis of Algorithms.
+\normalsize \vspace{0.05in}
+
+\ind Peer Mentor, Iowa State University, 2012--2015.
+
+\ind \hspace{0.35in} \footnotesize EE 185: Introduction to Electrical Engineering and Problem Solving.
+\normalsize \vspace{0.05in}
+
+\ind Undergraduate Teaching Assistant, Iowa State University, Fall 2013.
+
+\ind \hspace{0.35in} \footnotesize CPR E 288: Embedded Systems.
+\normalsize \vspace{0.05in}
+
+\bigskip
+
+\section{Honors \& awards}
+
+%% Honors and awards
+%\marginhead{\sffamily {\vskip 0.6em}Honors \newline \& awards}
+%\medskip
+
+\def\labelprefix{}
+\begin{etaremune}
+
+\item ACM SIGHPC Early Career Travel Grant to attend the ACM/IEEE Supercomputing Conference (SC), 2022.
+
+\item AMD Research Spotlight Award, Quarter 1 2022.
+
+\item ACM SIGHPC Outstanding Doctoral Dissertation Award, presented at the ACM/IEEE Supercomputing Conference (SC), 2021.
+
+\ind \hspace{0.35in} \footnotesize Press: \href{https://www.sighpc.org/for-your-career/dissertation-award/2021-award-winner-rohit-zambre}{ACM SIGHPC announcement},
+	\href{https://engineering.uci.edu/news/2021/7/zambre-wins-outstanding-doctoral-dissertation-award-supercomputing-communication}{UC Irvine news},
+	\href{https://www.hpcwire.com/off-the-wire/acm-sighpc-announces-doctoral-dissertation-award-winner-rohit-zambre/}{HPCwire news}.
+\normalsize
+
+\item Contributor to an R\&D 100 Award winner: Unified Communication X (UCX), 2019.
+
+\ind \hspace{0.35in} \footnotesize Press: \href{https://www.anl.gov/article/argonne-and-partners-take-home-nine-rd-100-awards-in-2019}{Argonne National Laboratory}
+\normalsize
+
+\item Best Poster Presentation Award, presented at the IEEE International Conference on Parallel and Distributed Systems (ICPADS), 2018.
+
+\item Winner, People's Choice \& Judges' Choice, Graduate Research Symposium, UC Irvine, 2016
+
+\item Tau Beta Pi Scholarship (\href{https://www.tbp.org/memb/ScholarArchives/ScholarReleases/2014ScholarshipRelease.pdf}{announcement}), 2014.
+
+\item College of Engineering Scholarships, Iowa State University, 2014 and 2012.
+
+	\ind \hspace{0.35in} \footnotesize Adolph Shane Scholarship, 2014.
+
+	\vspace{-0.5em}
+	\ind \hspace{0.35in} Arthur Edwin Zahller Endowed Scholarship, 2012.
+
+\normalsize
+
+\item Gold-level International Student Ambassador Scholarship, Iowa State University, 2011--2015.
+
+\item Certificates of Merit, CBSE's\footnote{Central Board of Secondary Education.} All India Senior School Certificate Examination, 2011.
+
+\ind \hspace{0.35in} \footnotesize Among top 0.1\% in Physics and Chemistry.
+
+\vspace{-0.5em}
+\ind \hspace{0.35in} Among top 1\% overall.
+
+\normalsize
+
+\item Certificates of Merit (among top 1/8\textsuperscript{th}) in all-India level tests conducted by third-party institutions before university education.
+
+	\ind \hspace{0.35in} \footnotesize Gold medal (rank 25), CIPEL's\footnote{Central Institute for Proficiency in English Language} English Proficiency and General Knowledge Test, 2011.
+	
+	\vspace{-0.25em}
+	\ind \hspace{0.35in} Rank 71, Bright Career Rohtak's Global Mathematics Talent Search, 2009.
+	
+	\vspace{-0.25em}
+	\ind \hspace{0.35in} Gold medal (rank 13), CIPEL's English Proficiency and General Knowledge Test, 2003.
+
+\normalsize
+
+\end{etaremune}
+
+\def\labelprefix{J}
+
+\newpage
+\section{Refereed research}
+
+%\subsection{Journal articles}
+\marginhead{\sffamily {\vskip 0.5em}Journal\newline articles}
+\medskip
+
+\begin{etaremune}
+
+\item \textbf{Rohit Zambre}, Damodar Sahasrabudhe, Hui Zhou, Martin Berzins, Aparna Chandramowlishwaran, Pavan Balaji. ``\href{https://doi.org/10.1109/TPDS.2021.3075157}{Logically Parallel Communication for Fast MPI+Threads Applications}.'' \emph{IEEE Transactions on Parallel and Distributed Systems (TPDS)}, April 2021.
+
+\item Damodar Sahasrabudhe, \textbf{Rohit Zambre}, Aparna Chandramowlishwaran, Martin Berzins. ``\href{https://doi.org/10.1016/j.jocs.2020.101279}{Optimizing the Hypre solver for manycore and GPU architectures}.'' \emph{Elsevier Journal of Computational Science (JCS)}, December 2020.
+
+\end{etaremune}
+
+%\marginhead{\sffamily {\vskip 0.35em} Publications}
+%\medskip
+
  
 %% Use revnumerate environment if numbered publications are needed. 
 %% (Include it above in the preamble).
 %% \renewcommand{\labelenumi}{\textsc{a}\theenumi.}
 %% \begin{revnumerate}
 
-\ind Forthcoming. Kieran Healy and James Moody. ``Data Visualization in Sociology.'' \emph{Annual Review of Sociology.}
-
-\ind Marion Fourcade and Kieran Healy. 2013. ``\href{http://kieranhealy.org/files/papers/classification-situations.pdf}{Classification Situations: Life-chances in the Neoliberal Era}.'' \emph{Accounting, Organizations, and Society} 38:~559--572.
-
-\ind Kieran Healy and Kimberly R. Krawiec. 2012. ``\href{http://kieranhealy.org/files/papers/custom-contract-kidney.pdf}{Custom, Contract, and Kidney Exchange}.'' \emph{Duke Law Journal} 62:~645--670. 
-
-\ind Kieran Healy. 2011. ``Counting and Commodifying.'' \emph{Washington University Journal of Law and Policy}. 35:~337--347.
-
-\ind Marion Fourcade and Kieran Healy. 2007. ``\href{http://arjournals.annualreviews.org/doi/pdf/10.1146/annurev.soc.33.040406.131642}{Moral Views of Market Society}.'' \emph{Annual Review of Sociology} 33:~285--311. 
-
-\ind Kieran Healy. 2006. ``\href{http://www.kieranhealy.org/files/papers/presumed-consent.pdf}{Do Presumed Consent Laws Raise Organ Procurement Rates?}'' \emph{DePaul Law Review} 55:~1017--1043. 
-
-\ind Kieran Healy. 2004. ``\href{http://www.kieranhealy.org/files/papers/asr2004.pdf}{Altruism as an Organizational Problem: The Case of Organ Procurement}.''
- \emph{American Sociological Review} 69:~387--404.
-
-\ind Kieran Healy. 2002. ``\href{http://www.kieranhealy.org/files/papers/jpp.pdf}{Digital Technology and Cultural Goods}.'' \emph{Journal of
-  Political Philosophy} 10:~478--500. 
-
-\ind Kieran Healy. 2002. ``\href{http://www.kieranhealy.org/files/papers/culture-newecon.pdf}{What's New for Culture in the New Economy?}'' \emph{Journal
-  of Arts Management, Law and Society} 32:~86--103. 
-
-
-\ind Kieran Healy. 2000. ``\href{http://www.kieranhealy.org/files/papers/embed-alt.pdf}{Embedded Altruism: Blood Collection Regimes and the European
-  Union's Donor Population}.'' \emph{American Journal of Sociology} 105:~1633--1657.
-
-
-\ind Kieran Healy. 1999.  ``\href{http://www.kieranhealy.org/files/papers/ts.pdf}{The Emergence of HIV in the U.S. Blood Supply: Organizations,
-  Obligations and the Management of Uncertainty}.'' \emph{Theory and Society} 28:~529--558.
-
-
-\ind Bruce Western and Kieran Healy. 1999. ``\href{http://www.kieranhealy.org/files/papers/western-healy99.pdf}{Explaining the OECD Wage Slowdown:
-Recession or Labor Decline?}''  \emph{European Sociological Review}
-15:~233--249.
-
-
-\ind  Kieran Healy. 1998.  ``\href{http://www.kieranhealy.org/files/papers/constraint98.pdf}{Conceptualising Constraint: Mouzelis, Archer and the concept of
-  social structure}.'' \emph{Sociology} 32:~509--522. 
-
 %\end{revnumerate}
-%\newpage
 \bigskip
+%\newpage
 
-\noindent\emph{Book chapters \vspace{0.05in}}
+%\subsection{Conference proceedings}
+\marginhead{\sffamily {\vskip 0.1em}Conference\newline proceedings}
+%\medskip
 % \renewcommand{\labelenumi}{\textsc{c}\theenumi.}
 % \begin{revnumerate}
 
-\ind Kieran Healy. Forthcoming. ``Social Structure, Gifts and Norms in \emph{The Story of Qiu Ju},'' in \emph{Norms and Values: The Role of Social Norms as Instruments of Value Realisation}, edited by Michael Baurmann, Geoffrey Brennan, Robert E. Goodin and Nicholas Southwood. Baden Baden: Nomos Verlag.
+\def\labelprefix{C}
 
-\ind Kieran Healy. 2008. ``Lo Scambio di Doni,'' in \emph{L'Altro in Me: Dono del Sangue fra Culture, Pratiche e Identità}, edited by Annamaria Fantauzzi. Milano: \textsc{avis} Nazionale, 36--42. 
+\begin{etaremune}
 
-\ind Kieran Healy. 2007. ``Sociology,'' in \emph{A Companion to Contemporary Political Philosophy} (Second Edition), edited by Robert E. Goodin, Philip Pettit and Thomas Pogge. New York: Blackwell, 90--122. 
+\item \textbf{Rohit Zambre}, Aparna Chandramowlishwaran. ``Lessons Learned on MPI+Threads Communication.'' \emph{ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)}, Dallas, TX, USA, November 2022.
 
-\ind  Kieran Healy. 2004. ``Sacred Markets and Secular Ritual in the Organ Transplant
-Industry,'' in \emph{The Sociology of the Economy}, edited by Frank Dobbin. New
-York: Russell Sage, 336--359.
+\item \textbf{Rohit Zambre}, Aparna Chandramowlishwaran, Pavan Balaji. ``\href{https://doi.org/10.1145/3392717.3392773}{How I Learned to Stop Worrying About User-Visible Endpoints and Love MPI}.'' \emph{34th ACM International Conference of Supercomputing (ICS)}, Worldwide online event, June 2020.
 
-\ind Bruce Western and Kieran Healy.  2001.  ``Wage Growth and Labor Decline in the
-Industrialized Democracies, 1965--1993,'' in \emph{Unemployment in the New
-  Europe}, edited by Nancy Bermeo. New York: Cambridge University Press,
-121--144.
+\item \textbf{Rohit Zambre}, Megan Grodowitz, Aparna Chandramowlishwaran, Pavel Shamis. ``\href{https://doi.org/10.1145/3337821.3337910}{Breaking Band: A Breakdown of High-Performance Communication}.'' \emph{48th ACM International Conference on Parallel Processing (ICPP)}, Kyoto, Japan, August 2019.
 
- \ind  Kieran Healy. 1998. ``The New Institutionalism and Irish Social Policy,'' in
-\emph{Social Policy in Ireland: Principles, Practice and Problems}, edited by
-Se\'{a}n Healy and Brigid Reynolds. Dublin: Oak Tree Press, 59--83.
+\item \textbf{Rohit Zambre}, Aparna Chandramowlishwaran, Pavan Balaji. ``\href{https://doi.org/10.1109/PADSW.2018.8645059}{Scalable Communication Endpoints for MPI+Threads Applications}.'' \emph{24th IEEE International Conference on Parallel and Distributed Systems (ICPADS)}, Sentosa, Singapore, December 2018.
 
-
-%\end{revnumerate}
-
-\bigskip 
-
-%\newpage
-\noindent\emph{Essays and reviews \vspace{0.05in}}
-
-%\renewcommand{\labelenumi}{\textsc{r}\theenumi.}
-%\begin{revnumerate}
-
-\ind Kieran Healy. 2011. ``\href{http://www.kieranhealy.org/files/reviews/karpik-review.pdf}{Judgment and Distinction}.'' \emph{Socio--Economic Review} 9:~787--800. 
-
-\ind Kieran Healy. 2011. ``\href{http://polmeth.wustl.edu/methodologist/tpm_v18_n2.pdf}{Choosing your Workflow Applications}.'' \emph{The Political Methodologist} 18 (2):~9--18. 
-
-\ind Kieran Healy. 2009. \href{http://www.journals.uchicago.edu/doi/pdf/10.1086/605757}{Review} of \emph{Pop Finance} by Brooke Harrington. \emph{American Journal of Sociology} 115:~309--12.
-
-\ind Kieran Healy. 2007. ``\href{http://www.kieranhealy.org/files/reviews/socforum-article.pdf}{A Wealth of Notions}.'' Review
-Essay on \emph{Freakonomics} by Steven Levitt and Stephen Dubner. \emph{Sociological Forum} 22:~119--125. 
-
-\ind  Kieran Healy. 2006. ``Sacred.'' In \emph{International Encyclopedia of Economic Sociology}, edited by Jens Beckert and Milan Zafirovski. London: Routledge, 588--589. 
-
-\ind  Kieran Healy. 2005. \href{http://www.kieranhealy.org/files/reviews/klinenberg.pdf}{Review} of \emph{Heat Wave} by Eric Klinenberg. \emph{Imprints} 8:~283--289.
-
-\ind  Kieran Healy. 2005. \href{http://www.kieranhealy.org/files/reviews/fox.pdf}{Review} of \emph{An R and S-PLUS Companion to Applied Regression}, by John Fox. \emph{Sociological Methods and Research} 34:~137--140.
-
-\ind  Kieran Healy. 2005. ``\href{http://www.kieranhealy.org/files/reviews/henwood.pdf}{After the Ball was Over}.'' Review of \emph{After the New
-  Economy} by Doug Henwood. \emph{European Economic Sociology Newsletter} 6 (3):~37--38.
-
-\ind  Kieran Healy. 2004. ``The Abundance of the Heart.'' Review of \emph{A Man After His Own Heart} by Charles
-Siebert. \emph{Australian Review of Public Affairs}, October. Reprinted in the
-\emph{Australian Financial Review}, October 22nd.
-
-\ind  Kieran Healy. 2003. \href{http://links.jstor.org/sici?sici=0094-3061%28200303%2932%3A2%3C252%3AAEATOC%3E2.0.CO%3B2-F}{Review} of \emph{Against Essentialism} by Stephan Fuchs.
-\emph{Contemporary Sociology} 32:~252--254.
-
-\ind  Kieran Healy. 2001. Review of \emph{Market Society} by Don Slater and Fran Tonkiss. \emph{European Economic Sociology Newsletter} 3 (1):~31--32.
-
-
-\ind  Kieran Healy. 1999. \href{http://links.jstor.org/sici?sici=0094-3061%28199903%2928%3A2%3C210%3ACPRCAS%3E2.0.CO%3B2-C}{Review} of \emph{Comparative Politics} by Mark Irving Lichbach and Alan S.
-Zuckerman. \emph{Contemporary Sociology} 28:~210--211.
-
-
-\ind  Kieran Healy. 1998. \href{http://www.kieranhealy.org/files/reviews/rule.pdf}{Review} of \emph{Theory and Progress in Social Science} by James Rule.  \emph{Theory
-  and Society}, 27:~435--441.
-
+\item \textbf{Rohit Zambre}, Lars Bergstrom, Laleh Beni, Aparna Chandramowlishwaran. ``\href{https://doi.org/10.1109/HiPC.2016.013}{Parallel Performance-Energy Predictive Modeling of Browsers: Case Study of Servo}''. \emph{23rd IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC)}, Hyderabad, India, December 2016.
  
+\end{etaremune}
 % %\end{revnumerate}
- \bigskip
+%\bigskip
+\pagebreak
 
-%% Presentations
-\marginhead{\sffamily {\vskip 0.5em}selected \newline invited talks \newline since 2007}
+%\subsection{Posters}
+\marginhead{\sffamily {\vskip 0.5em}Posters}
 \medskip
 
+\def\labelprefix{P}
 
-\ind ``Classification Situations.'' Yale University Center for Cultural Sociology, 2013.
+\begin{etaremune}
+
+\item \textbf{Rohit Zambre}. ``The Coming of Age of Multithreaded High-Performance Communication.'' Doctoral Showcase at the \emph{ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC) }, Atlanta, GA, USA, November 2020.
+
+\item \textbf{Rohit Zambre}, Aparna Chandramowlishwaran, Pavan Balaji. ``Scalable Communication Endpoints for MPI+Threads Applications.'' \emph{IEEE International Conference on Parallel and Distributed System (ICPADS)}, Sentosa, Singapore, December 2018. \textbf{\textcolor{nice-purple}{Best Poster Presentation Award}}.
+
+\item \textbf{Rohit Zambre}, Abdelhalim Amer, Aparna Chandramowlishwaran, Pavan Balaji. ``Evaluating Multiple Endpoints for MPI with libibverbs.'' \emph{24th ACM European MPI Users' Group Meeting (EuroMPI/USA)}, Chicago, IL, USA, September 2017.
+
+\item \textbf{Rohit Zambre}, Lars Bergstrom, Laleh Beni, Aparna Chandramowlishwaran. ``Parallel Performance-Energy Predictive Modeling of Browsers: Case Study of Servo.'' \emph{ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)}, Salt Lake City, UT, USA, November 2016.
+
+\end{etaremune}
+
+\section{Presentations}
+
+\marginhead{\sffamily {\vskip 0.5em}Tutorials}
+\medskip
+
+\ind ``Introduction to MPI.'' HPC-AI Advisory Council 10th RDMA Programming Competition, August 2022.
+\vspace{0.01in}
+
+\marginhead{\sffamily {\vskip 0.5em}Invited talks}
+\medskip
+
+\ind ``Exascalable Communication for Modern Supercomputing.'' Pacific Northwest National Laboratory, October 2021.
+\vspace{0.01in}
+
+\ind ``The Coming of Age of Multithreaded High-Performance Communication.'' AMD Research, September 2020.
+\vspace{0.01in}
+
+\ind ``Levaraging SC to Learn High-Performance Communication.'' The 6th Workshop on Best Practices for HPC Tranining and Education (BPHTE), November 2019.
+\vspace{0.01in}
+
+\ind ``Scalable Communication Endpoints for MPI+Threads Applications.'' Arm Research, September 2018.
+
+\marginhead{\sffamily {\vskip 0.5em}Conferences}
+\medskip
+
+\ind ``The Coming of Age of Multithreaded High-Performance Communication.'' ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC), Online, November 2020.
+\vspace{0.01in}
+
+\ind ``How I Learned to Stop Worrying About User-Visible Endpoints and Love MPI.'' ACM International Conference on Supercomputing (ICS), Online, June 2020.
+\vspace{0.01in}
+
+\ind ``Breaking Band: A Breakdown of High-Performance Communication.'' ACM International Conference on Parallel Processing (ICPP), Kyoto, Japan, August 2019. 
  
-\ind ``Scores and Classes.'' University of Pennsylvania, 2012.
+\ind ``Scalable Communication Endpoints for MPI+Threads Applications.'' IEEE International Conference on Parallel and Distributed Systems (ICPADS), Sentosa, Singapore, December 2018. 
+\vspace{0.01in}
 
-\ind ``The Performativity of Networks.'' Max Planck/Sciences Po Center, Paris, 2012. 
- 
-\ind ``Specialization and Status in Philosophy.'' Princeton University, 2010. 
+\ind ``Parallel Performance-Energy Predictive Modeling of Browsers: Case Study of Servo.'' IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC), Hyderabad, India, December 2016. 
 
-\ind Invited Discussant, ``For Love or Money?'', Center for the Interdisciplinary Study of Work and Social Capital, Washington University in St.\,Louis School of Law, 2010. 
+%\newpage
 
-\ind ``Gift Fetishism and the Market for Human Organs.'' CAL Visiting Scholar Lecture Series, James Madison University, 2009. 
+\marginhead{\sffamily {\vskip 0.5em}Other}
+\medskip
 
-\ind ``Specialization and Status in Philosophy.'' University of Chicago, Booth School of Business, 2009. 
-
-\ind ``Specialization and Status in Philosophy.'' University of California, Berkeley, 2009. 
-
-\ind ``Specialization and Status in Philosophy.'' University of Michigan, ICOS, 2009. 
-
-\ind ``Specialization and Status in Philosophy.'' Columbia University 2009. 
-
-\ind ``The Performativity of Networks.'' Yale University, 2009. 
-
-\ind ``The Performativity of Networks.'' Stanford University Graduate School of Business, 2008. 
-
-\ind ``The Performativity of Networks.'' Harvard/MIT Joint Seminar in Economic Sociology, 2008. 
-
-\ind ``Last Best Gifts: Altruism and the Market for Human Blood and Organs.'' Center for History, Society and Culture, University of California at Davis, 2007. 
-
-\ind ``Gift Fetishism and the Market for Human Organs.'' Department of Anthropology, University of Arizona, 2007. 
+\ind ``Parallel Performance-Energy Predictive Modeling of Browsers: Case Study of Servo.'' UCI Graduate Research Symposium, Irvine, CA, USA, April 2016. \textbf{\textcolor{nice-purple}{Winner, People's Choice \& Judge's Choice.}}
 
 %\end{revnumerate}
 
 \bigskip
 
+\section{Service}
 %\newpage
 
-\marginhead{\sffamily {\vskip 0.5em}selected \newline conference \newline presentations \newline since 2007}
+\marginhead{\sffamily {\vskip 0.5em}Peer\newline reviewing}
 \medskip
 
-\ind ``Dealing with Awkward Relations.'' Conference on New Theoretical Directions in Economic Sociology, Stockholm, September 2013. 
+\ind Program committee, Programming Models, Compilers, and Runtime Systems track, \href{https://www.ipdps.org/ipdps2023}{37th IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 2023.
+\vspace{0.01in}
 
-\ind ``Credit Scores and the Moralization of Inequality.'' Annual Meetings of the American Sociological Association, New York, August 2013.
- 
-\ind ``Channeling Solidarity: Social Organization and Blood Donation in Response to 9/11.'' Annual Meetings of the American Sociological Association, New York, August 2013.
+\ind Program committee, \href{https://www.openfabrics.org/2023-ofa-workshop/}{19th OpenFabrics Alliance (OFA) Workshop}, 2023.
+\vspace{0.01in}
 
-\ind Invited discussant, ``Religion and Generosity.'' American Sociological Association/American Society for Religion, joint session, Denver, August 2012.
+\ind Student volunteer applications, \href{https://sc22.supercomputing.org/}{ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)}, 2022.
+\vspace{0.01in}
 
-\ind Invited discussant, ``Philanthrophy and Real Utopia.'' Meetings of the American Sociological Association, Denver, August 2012. 
+\ind Program committee, \href{https://www.openfabrics.org/2022-ofa-workshop/}{18th OpenFabrics Alliance (OFA) Workshop}, 2022.
+\vspace{0.01in}
 
-\ind ``Ranking and the Gourmet Report.'' Meetings of the Central Division of the American Philosophical Association, Chicago, 2012. 
+\ind Research posters, \href{https://www.isc-hpc.com/isc-committees.html}{International Supercomputing Conference (ISC)}, 2022.
+\vspace{0.01in}
 
-\ind ``Dealing with Difficult Relations.'' Annual Meetings of the American Sociological Association, Las Vegas, 2011.
+\ind Program committee, Programming Models and Systems Software track, \href{http://sighpc.ipsj.or.jp/HPCAsia2022/}{5th International Conference on High Performance Computing (HPC Asia)}, 2022.
+\vspace{0.01in}
 
-\ind ``Economic Categories in Neoliberal Society.'' Annual Meetings of the Society for the Advancement of Socio-Economics, Madrid, 2011.
+\ind Research posters, \href{https://www.isc-hpc.com/isc-committees.html}{International Supercomputing Conference (ISC)}, 2021.
+\vspace{0.01in}
 
-\ind ``Economic Categories in Neoliberal Society.'' Annual Meetings of the Social Science History Association. Chicago, 2011. 
+\ind Student volunteer applications, \href{https://sc20.supercomputing.org/}{ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)}, 2020.
 
-\ind Invited discussant, ``Markets for Health or Healthy Markets?'' Annual Meetings of the American Sociological Association, Atlanta, 2010. 
+\ind Student volunteer applications, \href{https://sc19.supercomputing.org/}{ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)}, 2019.
 
-\ind ``Economic Categories and Claims.'' Conference on The Politics of Markets: Controversies, tools and policies, Berkeley, 2009.
-
-\ind Invited speaker, ASA Culture Section 20th Anniversary Symposium, ``Culture and Economy,'' Boston, 2008.
-
-\ind Invited discussant, conference on Norms and Values, ZiF center, University of Bielefeld, Germany, 2008. 
-
-\ind ``Economic Categories and the Claims of Neoliberal Society.'' Invited Session on Culture and Markets. Annual Meetings of the American Sociological Association, New York, 2007.
-
-\ind ``The Performativity of Networks.'' Special Session on Money in Movement: Markets, Circuits and Networks. Annual Meetings of the American Sociological Association, New York, 2007.
-
-\ind Presider, Regular Session on the Sociology of Knowledge. Annual Meetings of the American Sociological Association, New York, 2007. 
-
-\ind Discussant, Book Panel on Steven Levitt and Stephen Dubner's \emph{Freakonomics}. Annual Meetings of the Eastern Sociological Society, Philadelphia, 2007. 
-
-\bigskip 
-
-\marginhead{\sffamily {\vskip 0.6em}grants,\newline honors, \newline \& awards}
+\marginhead{\sffamily {\vskip 0.5em}Conference\newline organization}
 \medskip
 
-\ind Residential Fellowship, Center for Advanced Study in the Behavioral Sciences, Stanford University, 2008-09.
+\ind Program Co-Chair, \href{https://hoti.org/}{29th IEEE Hot Interconnects Symposium (HotI)}, 2022.
+%\vspace{0.01in}
 
-\ind Association for Research on Nonprofit Organizations and Voluntary Action (ARNOVA) Outstanding Book Prize, 2007.
+\ind Online Conference Co-Chair, \href{https://hoti.org/}{29th IEEE Hot Interconnects Symposium (HotI)}, 2022.
+%\vspace{0.01in}
 
-\ind Finalist, Society for the Study of Social Problems (SSSP), C. Wright Mills Award, 2007.
+\ind Web Chair, \href{https://hoti.org/}{28th IEEE Hot Interconnects Symposium (HotI)}, 2021.
+%\vspace{0.01in}
 
-\ind Rogers Program in Law and Society, Faculty Research Award, University of Arizona, 2006.
+\ind Lead Student Volunteer, \href{https://sc20.supercomputing.org/2020/07/07/eighteen-sc20-lead-student-volunteers-announced/}{ACM/IEEE ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)}, 2020 and 2019.
+%\vspace{0.01in}
 
-\ind Participant, Summer Institute on \emph{Economy and Society: Trajectories of Capitalism}, Center for Advanced Study in the Behavioral Sciences, 2006.
+\ind Web Chair, \href{https://www.mcs.anl.gov/events/workshops/ashes/2019/organizers.php}{9th IEEE International Workshop on Accelerators and Hybrid Exascale Systems (AsHES)}, 2019.
+%\vspace{0.01in}
 
-\ind University of Arizona SBSRI/Center for Applied Spatial
-Analysis. Geographical Information Systems Research Assistance
-Program Award. ``The Geography of Organ Procurement'', 2003.
+\ind Student Volunteer, ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2018, 2017 and 2016.
 
-\ind American Sociological Association, Dissertation Award, 2002.
-
-\ind University of Arizona Prop.\,301 Information Technology/Information Science Fund Award, 2002.
-
-\ind National Science Foundation Doctoral Dissertation Research Improvement Award, 2000.
-
-\ind Graduate Fellow, Fellowship of Woodrow Wilson Scholars, Princeton University,  1998--2000. 
-
-\ind Noah Cotsen Junior Teaching Fellowship, Princeton University, 1998--1999.
-
-\ind General Examinations with Distinction, Princeton University, 1998.
-
-\ind Graduate Fellowship, Princeton University, 1995--1998.
-
-\ind College Scholar, University College, Cork, 1993--1994.
-
-\ind College Undergraduate Scholarship, University
-College, Cork, 1991--1993.
-
-\bigskip 
-
-
-\marginhead{\sffamily {\vskip 1.12em}service to the \newline profession}
+\marginhead{\sffamily {\vskip 0.5em}Student\newline  organization}
 \medskip
 
-\medskip
+\ind Engineering council member, Associated Graduate Students, Univeristy of California, Irvine, 2016--2017.
 
-
-\marginhead{{\vskip 0.9em}Service to the \newline Profession}
-\medskip
-
-\medskip
+\ind President and Treasurer, Indian Students' Association, Iowa State University, 2012--2014.
 
 \end{document}
